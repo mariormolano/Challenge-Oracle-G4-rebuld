@@ -1,13 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/stylus_main.css">
-</head>
-<body>
-    <script src="./js/main.js"></script>
-</body>
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="CSS/styles.css">
+
+        <title>Encriptador de texto</title>
+    </head>
+
+    <body>
+        <div class="contenedor" id="contenedor">
+            <div class="oracle">Oracle Next Education</div>
+            <a href="https://www.aluracursos.com/"><img class="logo" src="./images/alura_logo.png" alt="Alura logo" srcset="" id="alura"></a>
+            <header>
+                <img id="leyenda" src="./images/header.png" alt="header">
+            </header>
+            <main id="main">
+                <section class="contenido">
+                    <img src="./images/texto1.png" alt=""><br>
+                    <img src="./images/flecha.png" alt="">
+                    <form>
+                        <div id="fondo_texto">
+                            <textarea pattern="[a-z]+" rows="10" cols="22" id="texto" placeholder="< Escribe aquí, las titles serán eliminadas"></textarea>
+                        </div>
+                    </form>
+                </section>
+                <section id="botones" class="contenido">
+                    <img id="botonEncriptar1" alt="" src="images/en_button.png" class="boton">
+                    <input type="range" min="0"  max="1" id="deslizador1">
+                    <img id="botonDesencriptar1" alt="" src="images/des_button.png" class="boton">
+                </section>
+                <section class="contenido">
+                    <img onclick="portapapeles()" alt="" src="images/cp_button.png" class="boton"><br>
+                    <img src="./images/flecha.png" alt="">
+                    <div id="fondo_resultado"><div id="resultado"></div></div>
+                </section>
+            </main>
+            <footer id="botones2">
+                <div><img id="botonEncriptar2" alt="" src="images/en_button.png" class="boton"></div>
+                <input type="range" min="0"  max="1" id="deslizador2">
+                <div><img id="botonDesencriptar2" alt="" src="images/des_button.png" class="boton"></div>
+            </footer>
+    
+            <script src="javascript/javascript.js"></script>
+        </div>
+    </body>
 </html>
